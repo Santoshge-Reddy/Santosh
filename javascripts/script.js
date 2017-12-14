@@ -3,24 +3,23 @@ $(function() {
   "use strict";
 
 
-// Navbar fix after scroll
+$(document).ready(function() {
+    $(window).resize(function() {
+        var bodyheight = $(this).height();
 
-// var high = $('#button').marginTop
+        $(window).on('scroll', function(){
+          if($(window).scrollTop() > bodyheight) {
 
-$(window).on('scroll', function(){
-  if($(window).scrollTop() > 600){
+            $('#sidebar').addClass('sidebar');
+            $('nav').addClass('fixed-top');
+          }else {
+            $('#sidebar').removeClass('sidebar');
+            $('nav').removeClass('fixed-top');
 
-    // console.log(high);
-
-    $('#sidebar').addClass('sidebar');
-    $('nav').addClass('fixed-top');
-  }else {
-    $('#sidebar').removeClass('sidebar');
-    $('nav').removeClass('fixed-top');
-
-  }
-})
-
+          }
+        });
+    }).resize();
+});
 
 
 
@@ -39,7 +38,7 @@ $(document).ready(function(){
 });
 
 
-
+// close nav bar when clicked in small size
 $(function(){
     var navMain = $("#mainbar");
     navMain.on("click", "a", null, function () {
