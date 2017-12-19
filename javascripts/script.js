@@ -6,9 +6,13 @@ $(function() {
 $(document).ready(function() {
     $(window).resize(function() {
         var bodyheight = $(this).height();
+        var buttonheight = $(#button).height();
 
         $(window).on('scroll', function(){
           if($(window).scrollTop() > bodyheight) {
+            
+            console.log("bodyheight");
+            console.log("buttonheight");
 
             $('#sidebar').addClass('sidebar');
             $('nav').addClass('fixed-top');
