@@ -6,7 +6,6 @@ $(function() {
 $(document).ready(function() {
     $(window).resize(function() {
         var bodyheight = $(this).height();
-        var buttonheight = $(#button);
 
         $(window).on('scroll', function(){
           if($(window).scrollTop() > bodyheight) {
