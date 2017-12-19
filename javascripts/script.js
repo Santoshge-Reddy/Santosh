@@ -10,8 +10,8 @@ $(document).ready(function() {
         $(window).on('scroll', function(){
           if($(window).scrollTop() > bodyheight) {
             
-            console.log("bodyheight");
-            console.log("buttonheight");
+            console.log(bodyheight);
+            console.log(buttonheight);
 
             $('#sidebar').addClass('sidebar');
             $('nav').addClass('fixed-top');
