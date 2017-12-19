@@ -50,13 +50,13 @@ $(function(){
     });
 });
 
-  
-  $(document).ready(function () {
+// prevent default action -right click
+<!--  $(document).ready(function () {
     //Disable full page
     $("body").on("contextmenu",function(e){
         return false;
     });
- });
+ }); -->
     
   
   
