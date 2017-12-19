@@ -5,13 +5,12 @@ $(function() {
 
 $(document).ready(function() {
     $(window).resize(function() {
-        var bodyheight = $(this).height();
+        var bodyheight = ($(this).height()-60);
 
         $(window).on('scroll', function(){
           if($(window).scrollTop() > bodyheight) {
             
             console.log(bodyheight);
-            console.log(buttonheight);
 
             $('#sidebar').addClass('sidebar');
             $('nav').addClass('fixed-top');
