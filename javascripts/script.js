@@ -3,61 +3,90 @@ $(function() {
   "use strict";
 
 
-$(document).ready(function() {
-    $(window).resize(function() {
-        var bodyheight = ($(this).height()-60);
+    $(document).ready(function() {
 
-        $(window).on('scroll', function(){
-          if($(window).scrollTop() > bodyheight) {
-            
-            console.log(bodyheight);
+      // full background image
+        $(window).resize(function() {
+            var bodyheight = ($(this).height()-60);
 
-            $('#sidebar').addClass('sidebar');
-            $('nav').addClass('fixed-top');
-          }else {
-            $('#sidebar').removeClass('sidebar');
-            $('nav').removeClass('fixed-top');
+            $(window).on('scroll', function(){
+              if($(window).scrollTop() > bodyheight) {
 
-          }
+                // console.log(bodyheight);
+
+                $('#sidebar').addClass('sidebar');
+                $('nav').addClass('fixed-top');
+              }else {
+                $('#sidebar').removeClass('sidebar');
+                $('nav').removeClass('fixed-top');
+
+              }
+            });
+        }).resize();
+
+
+
+              // background image based on time
+              var now = new Date();
+            	var today = now.getDay();
+            	var startTime = new Date();
+            	startTime.setHours(9);
+            	startTime.setMinutes(23);
+            	startTime.setSeconds(10);
+            	var endTime = new Date();
+            	endTime.setHours(14);
+            	endTime.setMinutes(43);
+            	endTime.setSeconds(20);
+
+            	if (today > 0 && today < 5)
+            		{
+            		if (startTime < now && endTime > now)
+            			{$('#background').addClass('background2');}
+            		else
+            			{$('#background').addClass('background1');}
+            		}
+            	else
+            		{$('#background').addClass('background2');}
+
+
+
+
+
+
+
+
+        // smooth scrollSpy
+        $('.nav-link').click(function (e) {
+          var linkHref = $(this).attr('href');
+
+          $('html, body').animate({
+            scrollTop: $(linkHref).offset().top
+          });
+          e.preventDefault();
         });
-    }).resize();
-});
+
+
+        // prevent default action -right click
+        //Disable full page
+        $("body").on("contextmenu",function(e){
+            return false;
+        });
 
 
 
-// smooth scrollSpy
-
-$(document).ready(function(){
-    $('.nav-link').click(function (e) {
-      var linkHref = $(this).attr('href');
-
-      $('html, body').animate({
-        scrollTop: $(linkHref).offset().top
-      });
-
-      e.preventDefault();
     });
-});
 
 
-// close nav bar when clicked in small size
-$(function(){
-    var navMain = $("#mainbar");
-    navMain.on("click", "a", null, function () {
-        navMain.collapse('hide');
+
+    // close nav bar when clicked in small size
+    $(function(){
+        var navMain = $("#mainbar");
+        navMain.on("click", "a", null, function () {
+            navMain.collapse('hide');
+        });
     });
-});
 
-// prevent default action -right click
- $(document).ready(function () {
-      //Disable full page
-      $("body").on("contextmenu",function(e){
-          return false;
-      });
- });
 
-    
-  
      // <!--Start of Tawk.to Script-->
      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
      (function(){
@@ -69,6 +98,5 @@ $(function(){
      s0.parentNode.insertBefore(s1,s0);
      })();
      // <!--End of Tawk.to Script-->
-  
-  
+
 });
