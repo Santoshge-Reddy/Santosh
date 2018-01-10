@@ -35,7 +35,7 @@ body, html {
   font-size: 50px;
 /*   padding: 10px 37px; */
   display: block;
-  /*animation: myframes 2s ease-in-out 0s infinite;*/
+  animation: jump 0.5s ease-in-out 0s infinite alternate;
 }
 
 #button a{
@@ -43,12 +43,12 @@ body, html {
 }
 
 
-/*@myframes myframes{
-  from
-    padding: 1px 37px;
-  to
-    padding: 10px
-}*/
+@myframes jump{
+  0%
+    margin-top : 5px;
+  100%
+    margin-top: 45px;
+}
 
 
 
