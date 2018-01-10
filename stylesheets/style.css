@@ -26,12 +26,14 @@ body, html {
   bottom: 0px;
   right: 5%;
   position: absolute;
+  min-height:80px;
+  min-weidth:107px;
 }
 
 #button i{
   color: white;
   font-size: 50px;
-  padding: 10px 37px;
+/*   padding: 10px 37px; */
   display: block;
   /*animation: myframes 2s ease-in-out 0s infinite;*/
 }
