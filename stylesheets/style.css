@@ -33,13 +33,13 @@ body, html {
 #button i{
   color: white;
   font-size: 50px;
-/*   padding: 10px 37px; */
   display: block;
-  animation: jump 0.5s ease-in-out 0s infinite alternate;
+  
 }
 
 #button a{
   text-decoration: none;
+  animation: jump 0.5s ease-in-out 0s infinite alternate;
 }
 
 
