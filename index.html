@@ -1,522 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Santosh</title>
     <meta charset="utf-8">
-    <meta name="resume master" content="building resume">
-    <meta name="santosh" content="web developer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">        <!-- logo -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <meta name="resume master" content="building resume">
+    <meta name="author" content="santosh">
+    <meta name="description" content="I'm santosh, a ninja webdeveloper / creative programmer with good knowledge of front-end technics.">
+    <meta name="keywords" content="santosh, Interactive Resume, PHP programmer, Web developer, Startup, Interactive CV, Resume, CV, PHP, MySQL, Javascript">
+
+    <title>Santosh</title>
+
+
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/css/style.css">
 	  <script src="https://use.fontawesome.com/815eddff59.js"></script>  <!-- icons -->
                                                                         <!-- fonts -->
+    <link rel="icon" type="image/png" href="images/favicon.png">        <!-- logo -->
   </head>
-  <body data-spy="scroll" offset="100">
+
+<body  data-spy="scroll" offset="200px">
 
 
-    <div class="background">
-      <div id="button" >
-        <a href="#profile"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
-      </div>
+  <!-- PreLoader -->
+  <div class="PreLoader"></div>
+
+
+
+  <!-- fullscreen background -->
+  <div id="background1">
+    <div class="solar-syst">
+        <div class="sun">
+          <div class="mercury">
+            <div class="venus">
+              <div class="earth">
+                <div class="mars">
+                  <div class="jupiter">
+                    <div class="saturn">
+                      <div class="uranus">
+                        <div class="neptune">
+                          <div class="pluto">
+                            <div class="asteroids-belt">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
+  </div>
 
 
-      <nav class="navbar navbar-expand-md navbar-dark">
+  <div id="background">
 
-
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="mainbar">
-              <ul class="navbar-nav mr-auto text-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#profile">Profile <span class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#experiences">Experiences</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#abilities">Abilities</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">Projects</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-
-          </nav>
-
-          <nav class="navs navbar-expand-md">
-
-            <div class="collapse navbar-collapse" id="sidebar">
-              <ul class="ml-auto text-center">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#profile">Profile <span class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#experiences">Experiences</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#abilities">Abilities</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">Projects</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-
-          </nav>
+    <div id="button" id="profile">
+      <a href="#profile"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+    </div>
+  </div>
 
 
 
-    <section>
+  <header>
+
+    <nav class="navbar navbar-expand-md navbar-dark">
 
 
-          <div id="profile">
-            <div class="container text-center">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <h2>Profile</h2>
-            <p>I'm a creative web developer</p>
-            <hr>
+        <div class="collapse navbar-collapse" id="mainbar">
+          <ul class="navbar-nav mr-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#profile">Profile <span class="sr-only">(current)</span></a>
+            </li>
 
-            <div class="row">
+            <li class="nav-item">
+              <a class="nav-link" href="#experiences">Experiences</a>
+            </li>
 
-              <div class="col-lg-4 col-md-12 text-left">
-                <h3>About me</h3>
-                <p>I am an allround web developer. I am a senior programmer with good knowledge of front-end techniques. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you'll learn faster and much more. As the saying goes: 'two heads are better than one'.</p>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#abilities">Abilities</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+
+      <nav class="navs navbar-expand-md">
+
+        <div class="collapse navbar-collapse" id="sidebar">
+          <ul class="ml-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#profile">Profile <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#experiences">Experiences</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#abilities">Abilities</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+
+  </header>
 
 
-              <div class="col-lg-4 col-md-12 text-center">
-                <img class="img-fluid" src="images/santosh.png" width="200px"  alt="santosh">
-              </div>
 
 
-              <div class="col-lg-4 col-md-12 text-left">
-                <h3>Details</h3>
-                <p>
-                  <strong>Name</strong><br>
-                  SANTOSH
-                  <br> <strong>AGE</strong><br>
-                  24
-                  <br> <strong>LOCATION</strong><br>
-                  visakhapatnam, Andhara Pradesh, India.
-                </p>
-              </div>
+  <section>
 
-            </div>
 
-            <div class="">
-              <p>Got inspired? Copied the theme? Or do you just like the website? No problem, just buy me a beer and make me happy!</p>
-            </div>
-            </div>
 
+      <div id="profile">
+        <div class="container text-center">
+
+        <h2>Profile</h2>
+        <p>I'm a creative web developer</p>
+        <hr>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-12 text-left">
+            <h3>About me</h3>
+            <p>I am an allround web developer. I am a senior programmer with good knowledge of front-end techniques. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you'll learn faster and much more. As the saying goes: 'two heads are better than one'.</p>
           </div>
 
 
-
-
-          <div id="experiences">
-            <div class="container text-center">
-              <h2>Experiences</h2>
-              <p>“Protons give an atom its identity, electrons its personality.”
-                  - Bill Bryson, A short history of nearly everything</p>
-              <hr>
-
-
-                <h3 class="text-left">Education</h3>
-
-                <div class=" row text-left">
-                  <div class="col-lg-4">
-                    <h4>Dr.L.B.COLLEGE</h4>
-                    <p>OCT 2014 - JUL 2017</p>
-                  </div>
-                  <div class="col-lg-8">
-                    <h4>MASTER OF COMPUTER APPLICATION</h4>
-                    <p>The education was mainly Java-based programming, but I also learned about SQL, PHP, MVC, UML and more. During my time in college, I specialized in multimedia. Here I learned about gaming -the importance of OOP-, web- and user experience and design.</p>
-                  </div>
-                </div>
-
-                <div class=" row text-left">
-                  <div class="col-lg-4">
-                    <h4>Dr.L.B.COLLEGE</h4>
-                    <p>JUN 2011 - MAR 2014</p>
-                  </div>
-                  <div class="col-lg-8">
-                    <h4>BACHELOR OF SCIENCE</h4>
-                    <p>The education was mainly Java-based programming, but I also learned about SQL, PHP, MVC, UML and more. During my time in college, I specialized in multimedia. Here I learned about gaming -the importance of OOP-, web- and user experience and design.</p>
-                  </div>
-                </div>
-
-                <h3 class="text-left">Career</h3>
-
-
-            </div>
+          <div class="col-lg-4 col-md-12 text-center">
+            <img class="img-fluid" src="images/santosh.png" width="200px"  alt="santosh">
           </div>
 
 
+          <div class="col-lg-4 col-md-12 text-left">
+            <h3>Details</h3>
+            <p>
+              <strong>Name</strong><br>
+              SANTOSH
+              <br> <strong>AGE</strong><br>
+              24
+              <br> <strong>LOCATION</strong><br>
+              visakhapatnam, Andhara Pradesh, India.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="">
+          <p>Got inspired? Copied the theme? Or do you just like the website? No problem, just buy me a beer and make me happy!</p>
+        </div>
+        </div>
+
+      </div>
 
 
-          <div id="abilities">
-            <div class="container text-center">
-            <h2>Abilities</h2>
-            <p>“Life without knowledge is death in disguise.”
-              - Talib Kweli</p>
-            <hr>
 
-            <h3 class="text-left">Skills</h3>
 
-            <ul id="list-columns" class="text-left">
-              <li><span class="ability-title">Bootstrap Framework</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">HTML(5)</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">CSS(3)</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">JSON</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">MySQL</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">PHP</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">Command line Inteface</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">JQuery</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">Javascript</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">LESS</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">Object Orientated Programming</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">SEO</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">Wordpress</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">Angular</span>
-                <span class="ability-score">
+      <div id="experiences">
+        <div class="container text-center">
+          <h2>Experiences</h2>
+          <p>“Protons give an atom its identity, electrons its personality.”
+              - Bill Bryson, A short history of nearly everything</p>
+          <hr>
+
+
+            <h3 class="text-left">Education</h3>
+
+            <div class=" row text-left">
+              <div class="col-lg-4">
+                <h4>Dr.L.B.COLLEGE</h4>
+                <p>OCT 2014 - JUL 2017</p>
+              </div>
+              <div class="col-lg-8">
+                <h4>MASTER OF COMPUTER APPLICATION</h4>
+                <p>The education was mainly Java-based programming, but I also learned about SQL, PHP, MVC, UML and more. During my time in college, I specialized in multimedia. Here I learned about gaming -the importance of OOP-, web- and user experience and design.</p>
+              </div>
+            </div>
+
+            <div class=" row text-left">
+              <div class="col-lg-4">
+                <h4>Dr.L.B.COLLEGE</h4>
+                <p>JUN 2011 - MAR 2014</p>
+              </div>
+              <div class="col-lg-8">
+                <h4>BACHELOR OF SCIENCE</h4>
+                <p>The education was mainly Java-based programming, but I also learned about SQL, PHP, MVC, UML and more. During my time in college, I specialized in multimedia. Here I learned about gaming -the importance of OOP-, web- and user experience and design.</p>
+              </div>
+            </div>
+
+            <h3 class="text-left">Career</h3>
+
+
+        </div>
+      </div>
+
+
+
+
+      <div id="abilities">
+        <div class="container text-center">
+        <h2>Abilities</h2>
+        <p>“Life without knowledge is death in disguise.”
+          - Talib Kweli</p>
+        <hr>
+
+        <h3 class="text-left">Skills</h3>
+
+        <ul id="list-columns" class="text-left">
+          <li><span class="ability-title">Bootstrap Framework</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">HTML(5)</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">CSS(3)</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">JSON</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">MySQL</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">PHP</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">Command line Inteface</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">JQuery</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">Javascript</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">LESS</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
                   <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
-                  <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
-                  <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
-                </span>
-              </li>
-              <li><span class="ability-title">Laravel Framework</span>
-                <span class="ability-score">
+              </span>
+          </li>
+          <li><span class="ability-title">Object Orientated Programming</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
                   <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">SEO</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">Wordpress</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
                   <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
                   <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
-                </span>
-              </li>
-            </ul>
-            <hr>
+              </span>
+          </li>
+          <li><span class="ability-title">Angular</span>
+            <span class="ability-score">
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+            </span>
+          </li>
+          <li><span class="ability-title">Laravel Framework</span>
+            <span class="ability-score">
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+              <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+            </span>
+          </li>
+        </ul>
+        <hr>
 
 
-            <h3 class="text-left">Languages</h3>
+        <h3 class="text-left">Languages</h3>
 
-            <ul id="list-columns" class="text-left">
-              <li><span class="ability-title">Telugu</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">Hindi</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">English</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-            </ul>
-            <hr>
+        <ul id="list-columns" class="text-left">
+          <li><span class="ability-title">Telugu</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">Hindi</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">English</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+        </ul>
+        <hr>
 
-            <h3 class="text-left">Tools</h3>
+        <h3 class="text-left">Tools</h3>
 
-            <ul id="list-columns" class="text-left">
-              <li><span class="ability-title">Firefox (8 years)</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">MS Office (10+ years)</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">Notepad++ (8 years)</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">Atom</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">Windows (10+ years)</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">Git / Github (4 year)</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">Internet Explore 10+ (8 years)</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-              <li><span class="ability-title">WAMP (2 year)</span>
-                  <span class="ability-score">
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                      <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                  </span>
-              </li>
-            </ul>
+        <ul id="list-columns" class="text-left">
+          <li><span class="ability-title">Firefox (8 years)</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">MS Office (10+ years)</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">Notepad++ (8 years)</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">Atom</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">Windows (10+ years)</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">Git / Github (4 year)</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">Internet Explore 10+ (8 years)</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+          <li><span class="ability-title">WAMP (2 year)</span>
+              <span class="ability-score">
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+              </span>
+          </li>
+        </ul>
 
+        </div>
+      </div>
+
+
+
+
+
+      <div id="projects">
+        <div class="container text-center">
+        <h2>Projects</h2>
+        <p>“You can do anything you set your mind to.”
+          - Benjamin Franklin</p>
+        <hr>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <a href="https://b-interactive.herokuapp.com/" target="_blank" ><img class="img-fluid" src="images/site1.png" width="350px" height="200" alt=""></a>
             </div>
+
+            <div class="col-lg-6">
+              <a href="https://shiv15.herokuapp.com/" target="_blank"><img class="img-fluid" src="images/site2.png" width="350px" height="230" alt=""></a>
+            </div>
+
           </div>
 
+        </div>
+      </div>
+
+
+
+      <div id="contact">
+        <div class="container text-center">
+        <h2>Contact</h2>
+        <p>“If I had asked people what they wanted, they would have said faster horses. ”
+          - Henry Ford</p>
+        <hr>
+
+
+        <ul id="list-columns" class="text-left">
+          <li>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <a href="https://www.linkedin.com/in/santosh-reddy-101010/" target="_blank">www.linkedin.com/in/santosh-reddy-101010/</a>
+          </li>
+
+          <li>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <a href="https://twitter.com/g_santosh_sunny" target="_blank">twitter.com/g_santosh_sunny</a>
+          </li>
+        </ul>
+
+        </div>
+      </div>
 
 
 
 
-          <div id="projects">
-            <div class="container text-center">
-            <h2>Projects</h2>
-            <p>“You can do anything you set your mind to.”
-              - Benjamin Franklin</p>
-            <hr>
+    </section>
 
-              <div class="row">
-                <div class="col-lg-6">
-                  <a href="https://b-interactive.herokuapp.com/" target="_blank" ><img class="img-fluid" src="images/site1.png" width="350px" height="200" alt=""></a>
-                </div>
+<footer>
 
-                <div class="col-lg-6">
-                  <a href="https://shiv15.herokuapp.com/" target="_blank"><img class="img-fluid" src="images/site2.png" width="350px" height="230" alt=""></a>
-                </div>
+   <!-- <div class="container">
 
-              </div>
+      <nav class="navbar navbar-nav">
 
-            </div>
-          </div>
+        <div class="social-icon">
+          <a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
+          <a href="#" class="social-button skype"><i class="fa fa-skype"></i></a>
+          <br>
+        </div>
 
+        <p>&copy; 2017 SANTOSH.in</p>
 
+      </nav>
 
-          <div id="contact">
-            <div class="container text-center">
-            <h2>Contact</h2>
-            <p>“If I had asked people what they wanted, they would have said faster horses. ”
-              - Henry Ford</p>
-            <hr>
+    </div> -->
+
+</footer>
 
 
-            <ul id="list-columns" class="text-left">
-              <li>
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                <a href="https://www.linkedin.com/in/santosh-reddy-101010/" target="_blank">www.linkedin.com/in/santosh-reddy-101010/</a>
-              </li>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="javascripts/script.js"></script>
 
-              <li>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <a href="https://twitter.com/g_santosh_sunny" target="_blank">twitter.com/g_santosh_sunny</a>
-              </li>
-            </ul>
-
-            </div>
-          </div>
-
-
-
-
-        </section>
-
-
-      <footer>
-
-    		 <!-- <div class="container">
-
-    				<nav class="navbar navbar-nav">
-
-    					<div class="social-icon">
-    						<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
-    						<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
-    						<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
-    						<a href="#" class="social-button skype"><i class="fa fa-skype"></i></a>
-    						<br>
-    					</div>
-
-    					<p>&copy; 2017 SANTOSH.in</p>
-
-    				</nav>
-
-    			</div> -->
-
-    	</footer>
-
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-      <script src="javascripts/script.js"></script>
-
-      </body>
-    </html>
+</body>
+</html>
