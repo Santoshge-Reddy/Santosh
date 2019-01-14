@@ -277,8 +277,59 @@ form button:hover {
 
   </body>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script type="text/javascript">
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    // TODO: Replace with your project's customized code snippet
+    var config = {
+      apiKey: "AIzaSyC18UMYL9ZVUwVvWelajQIYxhuZAzs5mWc",
+      authDomain: "resume-static.firebaseapp.com",
+      databaseURL: "https://resume-static.firebaseio.com",
+      projectId: "resume-static",
+      storageBucket: "resume-static.appspot.com",
+      messagingSenderId: "912433787486",
+    };
+    firebase.initializeApp(config);
+
+    var provider = new firebase.auth.GoogleAuthProvider();
+
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        console.log('log in');
+
+      } else {
+        console.log('log out');
+      }
+    });
+
+    $("#login-button").click(function(event){
+        event.preventDefault();
+
+        firebase.auth().signInWithPopup(provider).then(function(result) {
+          // This gives you a Google Access Token. You can use it to access the Google API.
+          var token = result.credential.accessToken;
+          // The signed-in user info.
+          var user = result.user
+          console.log('signed in');
+          // ...
+        }).catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // The email of the user's account used.
+          var email = error.email;
+          // The firebase.auth.AuthCredential type that was used.
+          var credential = error.credential;
+          // ...
+          console.log(error);
+        });
+   });
+
     $(document).ready(function() {
+
+
+
+
 
      //  $("#login-button").click(function(event){
      // 		 event.preventDefault();
