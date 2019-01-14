@@ -2,7 +2,7 @@ $(function() {
 
   "use strict";
 
-  
+
         function getAge(dateString) {
             var today = new Date();
             var birthDate = new Date(dateString);
@@ -15,11 +15,11 @@ $(function() {
         }
 
     $(document).ready(function() {
-      
+
         var get_age = getAge("1993/10/31");
-        $('current_age').html(get_age);
-      
-      
+        $('.current_age').html(get_age);
+
+
       // full background image
         $(window).resize(function() {
             var bodyheight = ($(this).height()-60);
