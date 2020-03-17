@@ -795,18 +795,34 @@
           </li>
         </ul>
 		
-	<form id="my-form"
-  action="https://formspree.io/mdodzdno"
-  method="POST"
->
-  <label>Email:</label>
-  <input type="email" name="email" class="form-control"/>
-  <label>Message:</label>
-  <input type="text" name="message" class="form-control"/>
-  <button id="my-form-button" class="form-control">Submit</button>
-  <p id="my-form-status"></p>
-</form>
+    <br>
+    <br>
+      <!-- <div class="container" > -->
+        <div class="row">
+          <div class="col card" style="background-color: #cfcfcf;">
+        <form id="my-form"
+        action="https://formspree.io/mdodzdno"
+        method="POST"
+        class="text-left my-3 p-5" 
+      >
+        <label>Name:</label>
+        <input type="text" name="name" class="form-control" required />
+        <label>Email:</label>
+        <input type="email" name="email" class="form-control"/>
+        <label>Message:</label>
+        <textarea type="text" name="message" class="form-control" cols="5" required ></textarea>
+        <br>
+        <button id="my-form-button" class="btn btn-primary">Submit</button>
+        <br>
+        <p id="my-form-status"></p>
+      </form>
 
+      </div>
+      </div>
+      <!-- </div> -->
+
+    <br>
+    <br>
         </div>
       </div>
 
