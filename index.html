@@ -375,7 +375,7 @@
         <h3 class="text-left">Skills</h3>
 
         <ul id="list-columns" class="text-left append_skills">
-          <li><span class="ability-title">Python</span>
+<!--           <li><span class="ability-title">Python</span>
               <span class="ability-score">
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
@@ -566,7 +566,7 @@
                   <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
               </span>
           </li>
-
+ -->
 
 
 
@@ -577,7 +577,9 @@
         <h3 class="text-left">Languages</h3>
 
         <ul id="list-columns" class="text-left append_lang">
-          <li><span class="ability-title">Telugu</span>
+          
+
+          <!-- <li><span class="ability-title">Telugu</span>
               <span class="ability-score">
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
@@ -603,14 +605,17 @@
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
                   <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
               </span>
-          </li>
+          </li> -->
+
+
         </ul>
         <hr>
 
         <h3 class="text-left">Tools</h3>
 
         <ul id="list-columns" class="text-left append_tools">
-          <li><span class="ability-title">AWS / HEROKU </span>
+          
+          <!-- <li><span class="ability-title">AWS / HEROKU </span>
               <span class="ability-score">
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
@@ -711,7 +716,9 @@
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
               </span>
-          </li>
+          </li> -->
+
+
         </ul>
 
         </div>
@@ -859,19 +866,19 @@ var lang = val.languages;
 
   $.each( skills, function( key, value ) {
     // console.log( key + ": " + value );
-                      append_skills += `<li><span class="ability-title">`+key.toUpperCase()+`</span><span class="ability-score">`;
-                      for (var i = 0; i < 5; i++) {
-                      if (i>value) {
-                        append_skills += `<span><i class="fa fa-star-o" aria-hidden="true"></i></span>`;
-                      }else{
-                        append_skills += `<span><i class="fa fa-star" aria-hidden="true"></i></span>`;
-                      }
-                      }
-                      append_skills += `</span> </li>`;
+              append_skills += `<li><span class="ability-title">`+key+`</span><span class="ability-score">`;
+              for (var i = 0; i < 5; i++) {
+              if (i>=value) {
+                append_skills += `<span><i class="fa fa-star-o" aria-hidden="true"></i></span>`;
+              }else{
+                append_skills += `<span><i class="fa fa-star" aria-hidden="true"></i></span>`;
+              }
+              }
+              append_skills += `</span> </li>`;
   });
 
   $.each( tools, function( key, value ) {
-              append_tools += `<li><span class="ability-title">`+key.toUpperCase()+`</span><span class="ability-score">`;
+              append_tools += `<li><span class="ability-title">`+key+`</span><span class="ability-score">`;
               for (var i = 0; i < 5; i++) {
               if (i>value) {
                 append_tools += `<span><i class="fa fa-star-o" aria-hidden="true"></i></span>`;
@@ -883,7 +890,7 @@ var lang = val.languages;
   });
 
   $.each( lang, function( key, value ) {
-              append_lang += `<li><span class="ability-title">`+key.toUpperCase()+`</span><span class="ability-score">`;
+              append_lang += `<li><span class="ability-title">`+key+`</span><span class="ability-score">`;
               for (var i = 0; i < 5; i++) {
               if (i>value) {
                 append_lang += `<span><i class="fa fa-star-o" aria-hidden="true"></i></span>`;
@@ -894,9 +901,9 @@ var lang = val.languages;
               append_lang += `</span> </li>`;
   });
 
-  // $('.append_lang').append(append_lang);
-  // $('.append_tools').append(append_tools);
-  // $('.append_skills').append(append_skills);
+  $('.append_lang').append(append_lang);
+  $('.append_tools').append(append_tools);
+  $('.append_skills').append(append_skills);
 
 
 
