@@ -104,10 +104,9 @@ $(function() {
   
 //   formspree
   
-    window.addEventListener("DOMContentLoaded", function() {
-
+$(function(){
     // get the form elements defined in your form HTML above
-    
+    button.style = "display: none ";
     var form = document.getElementById("my-form");
     var button = document.getElementById("my-form-button");
     var status = document.getElementById("my-form-status");
@@ -116,7 +115,11 @@ $(function() {
     
     function success() {
       form.reset();
-      button.style = "display: none ";
+      
+      setTimeout(function(){
+        button.style.display = "block"; 
+       }, 5000);
+      
       status.innerHTML = "Thanks!";
     }
 
@@ -149,6 +152,8 @@ $(function() {
     };
     xhr.send(data);
   }
+
+
   
 //   formspree
 
