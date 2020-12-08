@@ -56,12 +56,12 @@ $(function() {
             	if (today > 0 && today < 5)
             		{
             		if (startTime < now && endTime > now)
-            			{$('#background').addClass('background2');}
+            			{$('#background').addClass('background1');}
             		else
             			{$('#background').addClass('background1');}
             		}
             	else
-            		{$('#background').addClass('background2');}
+            		{$('#background').addClass('background1');}
 
 
 
